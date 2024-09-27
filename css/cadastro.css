@@ -1,0 +1,84 @@
+body{
+    font-family: Arial;
+    background-image: linear-gradient(to right, rgb(81, 104, 240), rgb(32, 41, 124));
+}
+
+.caixa{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.774);
+    padding: 10px;
+    border-radius: 15px;
+    width: 30%;
+}
+
+fieldset{
+    border: 3px solid dodgerblue;
+}
+
+legend{
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 9px;
+}
+
+.input{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    padding: 8px 0;
+}
+
+.inputLabel{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser:focus ~ .inputLabel{
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+
+#data_nascimento{
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+.voltar{
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(25, 17, 71));
+    color: #ffffff;
+    padding: 5px 80px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+    
+.voltar:hover{
+    background-image: linear-gradient(to right, rgb(56, 99, 126), rgb(27, 59, 75));
+}
